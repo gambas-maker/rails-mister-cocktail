@@ -1,0 +1,8 @@
+<h2>Create your new cocktail la zone en personne</h2>
+<%= simple_form_for (@cocktail) do |f| %>
+<%= f.input :name %>
+<%= f.submit "Add new cocktail" %>
+<% end %>
+
+<%= link_to "Voir tous les cocktails", cocktails_path %>
+

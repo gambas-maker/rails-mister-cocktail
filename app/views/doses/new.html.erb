@@ -1,0 +1,7 @@
+<h1>Ajoute ta dose mamen</h1>
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= f.input :description %>
+<%= f.association :ingredient, prompt: 'Choose one'  %>
+<%= f.submit "Save ta dose" %>
+<% end %>
